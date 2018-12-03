@@ -46,8 +46,8 @@ document.addEventListener('keypress', (event) => {
     }
 
     // updates the screen for Document Object Model (DOM)
-    document.getElementById("countGuessLeft").innerHTML = (guessLeft);
     document.getElementById("countWins").innerHTML = (wins);
     document.getElementById("countLosses").innerHTML = (losses);
+    document.getElementById("countGuessLeft").innerHTML = (guessLeft);
     document.getElementById("countGuessSoFar").innerHTML = (wrongLetterArray);
 });
