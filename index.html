@@ -1,0 +1,77 @@
+<!-- psychic game html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- viewport support for responsive with bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- using some bootstrap for formatting this is link to bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- css for any bootstrap overrides or other styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>The Psychic Game</title>
+</head>
+
+<body>
+    <!-- bootstrap jumbotron and row with directions + bonus this makes the page responsive -->
+    <div class="jumbotron">
+        <h1 class="text-center">The Psychic Game!</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Game Dashboard</h2>
+
+                <p>
+                    <h6>Guess what letter I'm thinking of!
+                </p>
+
+                <p>Wins: <span id="countWins">0</span></p>
+                <p>Losses: <span id="countLosses">0</span></p>
+                <p>Guesses Left Until You Lose: <span id="countGuessLeft">10</span></p>
+                <p>Guesses So Far: <span id="countGuessSoFar">0</span></h6>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Game Instructions</h2>
+
+                <!-- bootstrap list for additional documentation -->
+                <ul class="list-group">
+
+                    <li class="list-group-item list-group-item-info">The computer is thinking of a letter between A and Z. Test your psychic skills to see if you can
+                    guess the letter the computer is thinking about.</li>
+                    <li class="list-group-item list-group-item-secondary">To start the game press any key on your keyboard between A and Z.</li>
+                    <li class="list-group-item list-group-item-warning">Losses: (# of times the user has failed to
+                        guess the letter correctly after exhausting all guesses)</li>
+                    <li class="list-group-item list-group-item-secondary">Guesses Left: (# of guesses left. This
+                        will update)</li>
+                    <li class="list-group-item list-group-item-success">Your Guesses So Far: (the specific letters
+                        that the user typed. Display these until the user either wins or loses.)</li>
+                    <li class="list-group-item list-group-item-danger">When the player wins, increase the Wins
+                        counter and start the game over again (without refreshing the page).</li>
+                    <li class="list-group-item list-group-item-warning">When the player loses, increase the Losses
+                        counter and restart the game without a page refresh (just like when the user wins).</li>
+                        
+                </ul>
+                <!-- wanted some spacing at the bottom of the page with p and br for ease of reading and scrolling -->
+                <p></p>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- link to javascript -->
+    <script src="assets/javascript/game.js"></script>
+
+</body><br>
+
+<!-- footer -->
+<footer class="fixed-bottom">
+    <h3>created by Steve Tucker</h3>
+</footer>
+
+</html>
